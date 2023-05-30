@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clickBtn()">  주문하시겠습니까? </button>
+    <p id = "demo"></p>
+
+    <script>
+        function clickBtn(){ //함수 선언시에 예약어 사용 x, click 쓰니까 버튼 작동이 안됐었음....
+            let text;
+            let product = prompt('어떤 걸 주문하시겠습니까?', 'cola');
+            switch(product){
+                case 'cola':
+                    text = '콜라는 2천원입니다.';
+                    break;
+                case 'beer':
+                    text = '맥주는 4천원입니다.';
+                    break;
+                case 'milk':
+                    text = '우유는 3천원입니다.';
+                    break;
+                case 'coffee':
+                    text = '커피는 천원입니다.';
+                    break; 
+                default:
+                    text = '그런 물건은 팔지 않습니다.'
+
+            }
+            document.getElementById('demo').innerHTML = text; //demo라는 id 요소를 가져와 text를 작성해라
+        }
+    </script>
+</body>
+</html>

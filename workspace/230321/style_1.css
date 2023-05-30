@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
+
+/* *는 페이지 전체에 적용 */
+*{
+    font-family: 'Noto Serif KR', serif;
+} 
+
+h1 {
+    color:blue;
+}
+
+div h1{
+    color:pink;
+}
+
+
+.container{
+    background-color:yellow;
+}
+
+#red {
+    background-color: red;
+}
+
+body { 
+    /* 상위폴더의 경로까지 작성 : '..' */
+    background-image: url('../img/kf2.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}

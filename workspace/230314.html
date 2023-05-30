@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멋사1회</title>
+</head>
+
+<>
+    <!-- 제목 컨텐츠 -->
+    <h1>ㅎㅇ</h1>
+    <h2>hihi</h2>
+    <h3>hihihi</h3>
+    <h4>hihihihi</h4>
+    <h5>hihihiihihi</h5>
+    <h6>zzzzzzz</h6>
+
+    <!-- open tag O, close tag x -->
+    <hr> <!--주제 분리-->
+    <br>
+
+    <!-- lorem : 아무 문장 출력 -->
+    <!-- lorem5 : 5마디만 출력 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente blanditiis omnis corrupti deserunt! Ducimus atque impedit dolorem incidunt ea. Sed molestias animi consequatur reiciendis adipisci sint, a tempora incidunt sunt.</p>
+    <p>Lorem, ipsum.</p>
+
+
+
+    <a href="https://www.naver.com/">네이버</a>
+    <a href="https://www.naver.com/" target="_blank">네이버1</a>
+    <a href="https://www.naver.com/" target="_self">네이버2</a>
+    <!-- _blank: 새 윈도우 창을 열어 웹페이지를 연다
+        _self: 현재 윈도우창에 그대로 링크된 웹페이지를 연다 -->
+
+
+    <img src="kf.png" alt=""> <!--alt: 이미지 텍스트 설명-->
+
+    <!-- 폴더 정리했을 경우, 폴더 이름/파일명,확장자 -->
+    <img src="img/kf2.png" alt="">
+
+    <!-- 이미지 클릭시 네이버 사이트로 이동 -->
+    <a href="https://www.naver.com/" target="_blank"><img src="kf.png" alt=""> </a>
+
+
+
+
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <ol type="A">
+        <li>아침먹기</li>
+        <li>점심먹기</li>
+        <li>저녁먹기</li>
+    </ol>
+    <!-- 순서 중요 -->
+
+
+    <ul>
+        <li>바나나사기</li>
+        <li>딸기사깅</li>
+        <li>초콜렛사깅</li>
+    </ul>
+
+    <ul>
+        <li>바나나사기</li>
+        <li>딸기사깅
+            <ul>
+                <li>잎이 세워져있는걸로</li>
+                <li>안물린걸로</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- 순서 중요 x -->
+
+
+    <!-- block level -->
+    <div>정</div>
+    <div>지</div>
+    <div>현</div>
+
+    <!-- inline level -->
+    <!-- 띄어쓰기가 생김 -->
+    <span>정</span>
+    <span>지</span>
+    <span>현</span>
+
+    <br>
+
+    <button>click</button>
+    <!-- type: 이 버튼이 어떤 용도로 사용될지 알려줌 -->
+    <button name="click" value="click" type="submit">click me!</button>
+
+    <br>
+
+    <a href="https://www.naver.com/">
+        <button>naver</button>
+    </a>
+
+
+
+    <button>
+        <a href="https://www.naver.com/">네이버
+        </a>
+    </button>
+
+
+<br><br>
+
+
+
+
+
+<!--method-post : 사용자가 입력한 정보가 보이지 않음
+method-get : 사용자의 정보가 보임-->
+    <form action="method-post" method="post">
+
+
+<!--label의 for와 input의 id값을 동일하게 해야함
+이유: 컴퓨터에게 이 정보는 '이름(name)' 정보라는 걸 알려주기
+cf. https://rgy0409.tistory.com/4801 -->
+    <label for="name">이름 : </label>
+    <input type="text" id="name" name="userName">
+</div>
+
+
+<div>
+    <label for="id">id : </label>
+    <input type="text" id="id">
+</div>
+
+<!--pwd는 중요한 정보이기 때문에 type을 password로 설정-->
+<label for="pwd">pwd : </label>
+<input type="password" id="pwd">
+
+<!-- label-for & input-id 는 컴퓨터에게 둘의 관계를 알려주기 위함
+input-name은 컴퓨터에게 input의 이름을 알려주기 위함 -->
+
+<!-- name의 역할 : userId는 사용자의 id값을 가리키는 거군! -->
+
+<br>
+<button type="submit">제출</button>
+
+
+</form>
+
+</body>
+</html>

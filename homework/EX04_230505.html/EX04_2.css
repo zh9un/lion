@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+       background: #1f6bc2;
+      color: #666;
+      font-family: 'Pretendard', sans-serif;
+    font-size: 10px;
+  }
+  
+  /* 스크롤바 숨김 */
+  body::-webkit-scrollbar {
+      display: none;
+  }
+
+
+/* 로고 위치 조절 */
+  #logo {
+    width: 550px;
+    margin: 0 auto;
+    padding: 130px 0px 20px 30px;
+  }
+
+  /* 로고 폰트 세부 설정 */
+  #logo2 {
+    font-family: 'Press Start 2P', cursive;
+    color:white;
+    font-size: 19px;
+    text-shadow: 3px 3px rgb(31, 31, 31);
+  }
+
+  /* 목록 마커(점) 제거 */
+li {
+    list-style-type:none;
+}
+    
+
+    /* 상단메뉴바 */
+    #nav {
+        background: rgba(239,239,240,1);
+        border-radius: 9px;
+        float: right; /*오른쪽 정렬*/
+        margin: 15px 40px 130px 0px;
+        display: flex;
+        text-align: center;
+        
+    }
+  
+    
+    #nav > li {
+        text-align: center;
+        padding: 3px 10px;
+    }
+  
+  
+  a {
+    text-decoration: none; /*링크 줄 없앰*/
+    color: inherit; /*부모속성 따라감*/
+  }
+
+  /* 전체 박스 위치 중앙정렬 */
+  .wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+  }
+  
+  /* 흰색박스 */
+  .box {
+      display: flex;
+      justify-content: center;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: rgb(0 0 0 / 6%) 0px 8px 15px 3px;
+  }
+
+
+  
+  .main {
+      width: 770px;
+      background-color: white;
+  }
+  
+  .left {
+      width: 220px;
+      background-color: #f1f1f1;
+      border-right: 1px solid #dadbd9;
+  }
+
+ 
+  
+
+  #header {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 200px;
+      padding: 0 16px;
+      border-bottom: 0.5px solid #dadbd9;
+  }
+  
+  #header .header-inner {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding:20px;
+  }
+
+  #header .header-inner1 {
+    width: 100%;
+    align-items: center;
+    font-size: 13px;
+    font-family: gulim;
+
+}
+
+/* 오디오 플레이어 */
+#header .header-inner2 {
+    width: 50%;
+}
+
+
+  .sub {
+    font-family: 'Press Start 2P', cursive;
+    color:rgb(0, 209, 232);
+    font-size: 11px;
+  }
+
+  #header .pro {
+    font-family: gulim;
+    font-weight: bold;
+    float: left;
+    background-color: #1f6bc2;
+    color: #ffffff;
+  }
+
+  #music {
+    font-family: gulim;
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 5px;
+    text-align: center;
+  }
+
+
+
+
+  .category {
+    font-family: gulim;
+    color:black;
+      margin-top: 50px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+  }
+
+/* 아이콘 설정 */
+  i{
+    padding: 0px 10px 0px 1px;
+  }
+  .icon {
+    color:black;
+    padding-top: 130px;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  
+ 
+  /* 흰색박스 내부 크기 및 위치 조절 */
+  .contents {
+    padding: 36px;
+      width: 100%;
+      height: 300px;
+  }
+
+  /* 사진 간격 및 정렬 */
+  .al {
+    padding: 0px 0px 0px 45px;
+    float:left;
+  }
+
+
+  
+  /* 회색박스 부분 */
+
+  .booth-header {
+      padding: 20px 11px;
+  }
+  
+  .booth-body {
+      margin: 0 12px;
+      height: 160px;
+      background-position: 50% 50%;
+      background-size: cover;
+      border: 0.5px solid #d9dada;
+      border-radius: 5px;
+  }
+  
+  
+  
+
+
+  
