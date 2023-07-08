@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
+</head>
+<body>
+    <i id="back_btn" class="fa fa-calendar" aria-hidden="true"></i>
+    <h1> todolist</h1>
+   
+    <button id="emoji_btn">button</button>
+    <input type="text" id="message">
+
+
+    <script>
+        const button = document.querySelector("#emoji_btn");
+        const picker = new EmojiButton({
+            position: 'bottom-start'
+        });
+    
+        button.addEventListener('click', () => {
+            picker.togglePicker(button);
+        });
+    
+        picker.on('emoji', emoji => {
+            const text_box = document.querySelector('#message');
+            text_box.value += emoji;
+        });
+
+        const backBtn = document.querySelector("#back_btn");
+        backBtn.addEventListener("click", () => {
+            window.location.href = "../calender.html"; 
+        });
+    </script>
+</body>
+</html>
