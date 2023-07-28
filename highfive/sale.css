@@ -1,0 +1,159 @@
+@charset "UTF-8";
+.container .sale .contents .etc .reservation .rsv, .nav button {
+  border: none;
+  padding: 3px;
+  background-color: #E56666;
+  color: #fff;
+  font-size: 17px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 200px;
+}
+
+.header {
+  /* border: 1px solid red; */
+  margin: 20px 0;
+}
+.header h1 {
+  text-align: center;
+}
+
+.nav {
+  /* border: 1px solid blue; */
+  margin: 60px 0;
+  text-align: center;
+  font-size: 18px;
+}
+.nav label {
+  padding-right: 33px;
+}
+.container {
+  text-align: center;
+  /* border: 1px solid green; */
+}
+.container .sale {
+  margin: 40px 0;
+  /* border: 1px solid yellow; */
+}
+.container .sale .product {
+  /* border: 1px solid black; */
+}
+.container .sale .product h3 {
+  text-align: left;
+  padding: 10px 0px 10px 15px;
+}
+.container .sale .contents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "a b c";
+}
+.container .sale .contents .img {
+  /* border: 1px solid red; */
+  grid-area: a;
+  text-align: center;
+}
+.container .sale .contents .img img {
+  width: 100px;
+  height: 100px;
+}
+.container .sale .contents .price {
+  /* border: 1px solid blue; */
+  grid-area: b;
+  position: relative; /* 정가운데 정렬 */
+}
+.container .sale .contents .price .original {
+  /* 정가운데 정렬 */
+  position: absolute;
+  transform: translate(-50%, -120%);
+  left: 50%;
+  top: 50%;
+  text-decoration: line-through;
+  font-size: 17px;
+}
+.container .sale .contents .price .salePrice {
+  /* 정가운데 정렬 */
+  position: absolute;
+  transform: translate(-50%, -20%);
+  left: 50%;
+  top: 50%;
+  color: #E56666;
+  font-weight: bold;
+  font-size: 22px;
+}
+.container .sale .contents .etc {
+  /* border: 1px solid green; */
+  grid-area: c;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.container .sale .contents .etc .stock {
+  position: relative; /* 정가운데 정렬 */
+}
+.container .sale .contents .etc .stock .stockTxt {
+  display: inline-block; /* 정가운데 정렬 */
+  /* 정가운데 정렬 */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  font-size: 17px;
+}
+.container .sale .contents .etc .reservation {
+  /* border: 1px solid black; */
+  position: relative; /* 정가운데 정렬 */
+}
+.container .sale .contents .etc .reservation .rsv {
+  /* 정가운데 정렬 */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+/* 말풍선 */
+.arrow_box {
+  display: none;
+  position: absolute;
+  width: 130px;
+  padding: 8px;
+  left:50%;
+  top:calc(100% + 10px);
+  transform: translateX(-50%);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+}
+
+.arrow_box:after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border: solid transparent;
+  border-color: rgba(51, 51, 51, 0);
+  border-bottom-color: #333;
+  border-width: 10px;
+  pointer-events: none;
+  content: ' ';
+}
+
+.rsv:hover + p.arrow_box {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0px;
+  }
+}
